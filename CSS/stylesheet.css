@@ -1,83 +1,114 @@
-
 *{
-  font-family:Arial, Helvetica, sans-serif;
-  margin:0; padding:0;
-  box-sizing: border-box;
-  text-decoration: none;
-  text-transform:capitalize;
-  transition:all .2s linear;
-  float: left;
-}
-body{
-  background: black;
-}
-/* mengatur tampilan pada html */
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform:capitalize;
+    transition:all .2s linear;
+    
+  }
+  body{
+    background: black;
+  }
+  /* mengatur tampilan pada html */
 html{
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  scroll-padding-top: 50px;
-  overflow-x: hidden;
-}
-/* mengatur tampilan pada class logo */
-.logo{
-  font-weight: bolder;
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-}
-/* mengubah warna teks BEStrong */
-span{
-  color: #ff000f;
-}
-/* mengatur tampilan pada class navbar */
-.navbar a{
- color: white;
- font-size: 14px;
- text-decoration: none;
- padding: 36px;
- display:inline-block;
-}
-.navbar a:hover{
-  background: #ff000f;
-}
-/* mengatur tampilan pada class header */
-.header{
-  position: fixed;
-  top: 0; left:0; right:0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding:0 9%;
-}
-#menu-btn{
-  font-size: 50px;
-  color:white;
-  cursor: pointer;
-  
-}
-/* desain untuk media quaries */
-@media (max-width:1000px){
-html{
-  font-size: 55%;
-}
-.header{
-  padding: 0 20px;
-}
-}
-/* desain untuk media quaries ketika maxwidth mencapai 768px maka akan terjadi perubahan posisi atau tata letak */
-@media (max-width:670px){
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+    overflow-x: hidden;
+  }
+  .logo{
+    font-weight: bolder;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  span{
+    color: #ff000f;
+  }
+  .navbar a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 36px;
+    display:inline-block;
+   }
+   .navbar a:hover{
+    background: #ff000f;
+  }
   .header{
-  padding: 2px;
+    position: fixed;
+    top: 0; left:0; right:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 9%;
   }
-  .navbar{
-  position:absolute;
-  top: 99%; left:0; right: 0;
-  background: green;
-  } 
-}
-/* desain untuk media quaries ketika maxwidth mencapai 768px maka akan terjadi perubahan posisi atau tata letak */
-@media (max-width:450px){
-  html{
-    font-size: 55%;
-  }
-}
+  @media (max-width:1200px){
+    html{
+      font-size: 55%;
+    }
+    .header{
+      padding: 0 20px;
+    }
+    }
+    /* desain untuk media quaries tablet */
+    @media (max-width:670px){
+      .header{
+      padding: 2px;
+      }
+      .navbar{
+      position:absolute;
+      top: 99%; left:0; right: 0;
+      background:lightgray;
+      flex-direction:row;
+      display: flex;
+      } 
+      a{
+        display: block;
+      }
+    }
+    /* desain untuk media quaries smartphone */
+    @media (max-width:320px){
+      html{
+        font-size: 50%;
+    
+      }
+      .navbar{
+        position:absolute;
+        top: 99%; left:0; right: 0;
+        background:lightcyan;
+        flex-direction: column;
+        display: flex;
+      }
+      a{
+        display: block;
+      }
+    }
+    .container {
+        width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        font-size: medium;
+      }
+      .top-wrapper {
+        padding: 180px 0 100px 0;
+        background-image:url(Images/home-bg-1.jpg);
+        color: white;
+        background-size: cover;
+      }
+      .top-wrapper1 {
+        padding: 180px 0 100px 0;
+        background-image:url(Images/home-bg-2.jpg);
+        color: white;
+        background-size: contain;
+      }
+      .container1 {
+        width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        font-size: medium;
+      }
+      p{
+        font-size: 15px;
+      }
